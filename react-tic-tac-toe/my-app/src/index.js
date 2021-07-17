@@ -60,6 +60,7 @@ function Square(props){
 
     handleClick(i){
       const squares = this.state.squares.slice();
+      // That checks for both if game finished and if square taken : ) 
     if (calculateWinner(squares) || squares[i]) {
       return;
     }
