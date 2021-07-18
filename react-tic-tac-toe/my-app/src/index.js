@@ -90,11 +90,11 @@ function Square(props){
 
     
     jumpTo(move) {
-      const history = this.state.history.slice(0, move + 1)
+      // const history = this.state.history.slice(0, move + 1)
       this.setState({
         stepNumber: move,
         xIsNext: (move % 2) === 0,
-        history : history.slice(),
+        history : this.state.history.slice(0, move + 1)
       });
     }
 
