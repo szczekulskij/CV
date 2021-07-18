@@ -106,7 +106,7 @@ function Square(props){
 
       const moves = history.map((step,move) => {
         const description = move ? 'Go to move #' + move : 'Go to game start';
-      if ((this.state.history.length) === 1) {return;}
+      if ((this.state.history.length) === 1) {return '';}
       else {
         return ( 
           <li key = {move}>
