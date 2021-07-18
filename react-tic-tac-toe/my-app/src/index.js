@@ -96,6 +96,10 @@ function Square(props){
       });
     }
 
+    handleTimeTravel(move,history){
+      this.jumpTo(move)
+    }
+
 
     render() {
       const history = this.state.history;
@@ -106,7 +110,7 @@ function Square(props){
         const description = move ? 'Go to move #' + move : 'Go to game start';
         return ( 
           <li key = {move}>
-            <button onClick = {() =>this.jumpTo(move)} > {description} </button>
+            <button onClick = {() =>this.handleTimeTravel(move, this.state.history)} > {description} </button>
           </li>
         )
       })
