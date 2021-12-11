@@ -1,17 +1,15 @@
-# CV
-My online CV 
-
-
-Within other_cvs_uncleaned You can find next version of CVs - currentely in developement
-Once ready the current CV will be substituted
-
-
-
-
-
-
 ### Improvements to be made : 
 * Have the site in English, Polish & Spanish
-* __Fix your email link__ Triple check if it works properly (it'd be a bad showcase if it doesnt)
-* Update description about yourself / delete it
 * Add pdf for Your resume 
+* Add projects - have a better connection with github
+* Add more subsites - add a blog and make it a habit to add a post on bi-weekly basis (Starting after America Applications)
+
+
+
+
+
+### Self notes:
+* Runs on AWS lightsail server - https://lightsail.aws.amazon.com/ls/
+* You've cloned your report under /var/www/html. To update repo:
+    1. just git fetch/pull and make sure index.html included (default read file for apache)
+    2. run `sudo systemctl httpd restart' - to restart apache and make server fetch updated index file.
